@@ -23,7 +23,7 @@ async def on_message(message):
 
 # Embeds
 
-@bot.tree.command(name='help', description='Bot Commands')
+@bot.tree.command(name='helpbot', description='Bot Commands')
 async def helpcommand(interaction):
     emmbed = discord.Embed(title='Help Menu',
                           description='Bot Commands',
