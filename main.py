@@ -27,7 +27,7 @@ async def on_message(message):
 async def helpcommand(interaction):
     emmbed = discord.Embed(title='Help Menu',
                           description='Bot Commands',
-                          color=f8bbd0,
+                          color='f8bbd0',
                           timestamp= discord.utils.utcnow())
     
     await interaction.response.send_message(embed = emmbed)
