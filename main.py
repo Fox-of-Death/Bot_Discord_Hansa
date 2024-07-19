@@ -20,6 +20,9 @@ async def on_message(message):
     if message.content.startswith('!hello'):
         await message.channel.send('Hello!')
 
+    if message.content.startswith('!help1'):
+        await message.channel.send('Welcome to {servername}!')
+
 # Embeds
 
 @bot.tree.command(name='help', description='Bot Commands')
