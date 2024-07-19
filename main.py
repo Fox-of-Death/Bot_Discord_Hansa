@@ -20,6 +20,18 @@ async def on_message(message):
     if message.content.startswith('!hello'):
         await message.channel.send('Hello!')
 
+# Embeds
+
+@bot.tree.command(name='help', description='Bot Commands')
+async def helpcommand(interaction):
+    emmbed = discord.Embed(title='Help Menu',
+                          description='Bot Commands',
+                          color='f8bbd0',
+                          timestamp= discord.utils.utcnow())
+    
+    await interaction.response.send_message(embed = emmbed)
+    
+
 server_on()
 
 bot.run(os.getenv('TOKEN'))
