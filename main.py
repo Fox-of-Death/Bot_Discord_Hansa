@@ -22,4 +22,4 @@ async def on_message(message):
 
 server_on()
 
-bot.run('os.getenv'('TOKEN'))
+bot.run(os.getenv('TOKEN'))
